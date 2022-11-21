@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValorantAuth", "ValorantAuth.csproj", "{C419F66D-87E6-4C01-8CDA-79CE40680977}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C419F66D-87E6-4C01-8CDA-79CE40680977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C419F66D-87E6-4C01-8CDA-79CE40680977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C419F66D-87E6-4C01-8CDA-79CE40680977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C419F66D-87E6-4C01-8CDA-79CE40680977}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D768FB66-24BC-4366-8E5D-2C4F44DD507B}
+	EndGlobalSection
+EndGlobal
