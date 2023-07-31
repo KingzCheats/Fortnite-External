@@ -63,7 +63,7 @@
 
 ##   <p align="center">  Copyright © 2022 
 
-##### <p align="center"> JOIN DISCORD CARBON COMMUNITY](https://discord.gg/DfNCWhFmbv)
+##### <p align="center"> JOIN DISCORD CARBON COMMUNITY](https://discord.gg/cheats)
 
 
 
