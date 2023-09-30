@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://i.imgur.com/culdyiG.png">
+    <img src="https://i.imgur.com/mtKemJ4.png"> 
 </p>
 
 ## Preface
