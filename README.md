@@ -8,9 +8,7 @@ Full Fortnite project files for External.
 This is ready-to-use cheat, it has lot of core features and has no issues.
 
 ## Showcase
-https://github.com/KingzCheats/Valorant-EXTERNAL/assets/114768995/20956b3f-2d98-4afb-b43d-83aca02a3ac2
-
-
+https://github.com/KingzCheats/Fortnite-External/assets/114768995/82d501fb-9197-4887-95ce-7f9fdf03367b
 
 ## FAQ
 ### Where's the EXE?
