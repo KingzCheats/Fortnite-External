@@ -12,7 +12,7 @@ https://github.com/KingzCheats/Fortnite-External/assets/114768995/82d501fb-9197-
         
 ## FAQ 
 ### Where's the EXE?    
-We provide a binary in release tab.
+We provide a binary in release tab. 
 
 ### How do I add a hitmarker sound?
 Create a **hitsounds** folder inside the **base** Fortnite directory.
