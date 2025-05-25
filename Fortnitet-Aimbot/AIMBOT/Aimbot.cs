@@ -13,37 +13,41 @@ using System.Threading.Tasks;
  
 namespace ValorantColorAimbot 
 {
-    class Program
+    class
+
+
+
+    Program
     {
         // Here you will need to modify it to fit your screen. If you don't fix it, it won't fit and won't work.
         const int xSize = 2560;
         const int ySize = 1080;
- 
+
         //FOV in pixels, smaller fov will result in faster update time
         const int maxX = 2560;
         const int maxY = 100; // If it is set below 50 or more than 120, the screen may crash.
- 
+
         // GAME
         const float speed = 1.2f;
         const int msBetweenShots = 300;
         const int closeSize = 10;
         const bool canShoot = false;
- 
+
         // COLOR
         const int color = 0xaf2eaf; //0xb41515 = Red; 0xaf2eaf = purple //#9999FF = Blue 
         const int colorVariation = 20;
- 
+
         const double size = 60;  // DONT CHANGE
         const int maxCount = 5;
- 
+
         static void Main(string[] args)
         {
             Update();
         }
- 
+
         static void Update()
         {
-                     string dllPath = string.Empty;
+            string dllPath = string.Empty;
             using (OpenFileDialog fileDialog = new OpenFileDialog())
             {
                 fileDialog.InitialDirectory = Directory.GetCurrentDirectory();
