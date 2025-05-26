@@ -10,8 +10,52 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
  
-namespace ValorantColorAimbot 
+namespace ValorantColorAimbot austyn wayne
 {
+    public class Aimbot
+    {
+        public static Point FindTarget(Bitmap screen, int targetColor, int colorVariation)
+        {
+            List<Point> points = new List<Point>();
+            Rectangle rect = new Rectangle(0, 0, screen.Width, screen.Height);
+            BitmapData bitmapData = screen.LockBits(rect, ImageLockMode.ReadOnly, screen.PixelFormat);
+
+            unsafe
+            {
+                byte* ptr = (byte*)bitmapData.Scan0;
+                int bytesPerPixel = Image.GetPixelFormatSize(screen.PixelFormat) / 8;
+
+                for (int y = 0; y < bitmapData.Height; y++)
+                {
+                    for (int x = 0; x < bitmapData.Width; x++)
+                    {
+                        int index = (y * bitmapData.Stride) + (x * bytesPerPixel);
+                        int b = ptr[index];
+                        int g = ptr[index + 1];
+                        int r = ptr[index + 2];
+
+                        int color = (r << 16) | (g << 8) | b;
+
+                        if (Math.Abs((color & 0xFFFFFF) - targetColor) <= colorVariation)
+                        {
+                            points.Add(new Point(x, y));
+                        }
+                    }
+                }
+            }
+
+            screen.UnlockBits(bitmapData);
+
+            if (points.Count > 0)
+            {
+                return points.OrderBy(p => Math.Sqrt(p.X * p.X + p.Y * p.Y)).First();
+            }
+
+            return Point.Empty;
+        }
+    }
+
+
     class Program
     {
         // Here you will need to modify it to fit your screen. If you don't fix it, it won't fit and won't work.
